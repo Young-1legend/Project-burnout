@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="Viewport" content="width = device-width, initial scale =1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="admin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <title>Admin Control Panel</title>
+</head>
+
+<body>
+
+    <div>
+
+        <div>
+            <div class="side-menu">
+                <div class="brand-logo">
+                    <img src="images/logo.jpg" alt="Company logo">
+                </div>
+                <ul>
+                    <li><a href="Dashboard.html"><span>Dashboard</span></a> </li>
+                    <li><a href="admin.html"><span>Admin Control Panel</span></a></li>
+                    <li><a href="Inventory.html"><span>Inventory</span></a> </li>
+                    <li><a href="sales.html"><span>Sales</span></a> </li>
+                    <br><br>
+                </ul>
+            </div>
+
+
+
+            <div class="container">
+                <div class="header">
+                    <div class="nav">
+                        <div class="search">
+                            <input type="text" placeholder="Search..">
+                            <button type="submit"><img src="Icons/search.png" alt=""></button>
+                        </div>
+                        <script>
+                            function myFunction() {
+                                document.getElementById("myDropdown").classList.toggle("show");
+                            }
+
+                            window.onclick = function(event) {
+                                if (!event.target.matches('.dropbtn')) {
+                                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                                    var i;
+                                    for (i = 0; i < dropdowns.length; i++) {
+                                        var openDropdown = dropdowns[i];
+                                        if (openDropdown.classList.contains('show')) {
+                                            openDropdown.classList.remove('show');
+                                        }
+                                    }
+                                }
+                            }
+                        </script>
+                        <div class="user">
+                            <div class="dropdown">
+                                <button onclick="myFunction()" class="dropbtn">Welcome</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="Login_Page-main/login.html">Sign Out</a>
+                                </div>
+                            </div>
+                            <div class="img-case">
+                                <img src="Icons/admin.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="content-2">
+                    <div class="administrators">
+                        <div class="title">
+                            <h3>Administrators</h3>
+
+                        </div>
+                        <table>
+                            <tr>
+                                <th>Name</th>
+                                <th>Time Added</th>
+                                <th>Date</th>
+                                <th>Option</th>
+                            </tr>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>11:15am</td>
+                                <td>07/06/2020</td>
+
+                                <td><a href="#" class="btnnns">Remove</a></td>
+                            </tr>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>7:15pm</td>
+                                <td>08/07/2020</td>
+
+                                <td><a href="#" class="btnnns">Remove</a></td>
+                            </tr>
+                            <tr>
+                                <td>John Doe</td>
+                                <td>12:14pm</td>
+                                <td>09/09/2021</td>
+
+                                <td><a href="#" class="btnnns">Remove</a></td>
+                            </tr>
+
+                        </table>
+                    </div>
+
+                </div>
+
+                <div class="text-box">
+                    <h2>Welcome Sir,</h2>
+                    <p>What would you like to do?</p>
+                </div>
+                <section>
+
+                    <nav class="links-edit">
+
+                        <div class="b.container">
+                            <button href="#" class="btn btn1">Add New Admin</button>
+                            <button href="#" class="btn btn2">Remove Existing Admin</button>
+                            <button href="#" class="btn btn3">Manage Admins</button>
+
+                        </div>
+                    </nav>
+                </section>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

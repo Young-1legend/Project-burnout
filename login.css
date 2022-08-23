@@ -1,0 +1,8 @@
+body{
+    background-image: url("/backgroundimage.png");
+    background-size: cover; 
+}
+
+.loginButton{
+    align-items: center;
+}
